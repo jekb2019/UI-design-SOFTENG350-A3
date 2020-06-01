@@ -238,6 +238,7 @@ header{
 #information img{
     margin-right: 0;
 }
+
 /* Share function popup */
 #share-popup{
     position: fixed;
@@ -251,7 +252,7 @@ header{
     border: 1px solid black;
     border-radius: 10px;
     padding:var(--padding-default);
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .share-popup__header{
@@ -294,6 +295,18 @@ header{
     display: inline-block;
     width: 70px;
 }
+.share-popup__send-info .advanced{
+    font-size: var(--font-micro);
+    margin-left: 280px;
+    cursor: pointer;
+}
+.share-popup__send-info .advanced span{
+    text-decoration: underline;
+    color: blue;
+}
+.share-popup__send-info .advanced span:active{
+    color: red;
+}
 #message-label{
     vertical-align: top;
 }
@@ -301,7 +314,7 @@ header{
     display: flex;
     justify-content: space-around;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .share-popup__buttons > div{
     border-radius: 15px;
@@ -311,5 +324,39 @@ header{
     transition: box-shadow var(--animation-default) ease-out;
 }
 .share-popup__buttons > div:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Share successful popup */
+#share-succeeded{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 160px;
+    width: 300px;
+    margin-top: -80px;
+    margin-left: -150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:var(--padding-default);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-xlarge);
+}
+#share-succeeded span{
+    margin-top: 20px;
+}
+#share-succeeded .ok-button{
+    border-radius: 30px;
+    background-color: #eeeeee;
+    padding: 5px 50px;
+    box-shadow: 0px 0px 5px gray;
+    transition: box-shadow var(--animation-default) ease-out;
+    cursor: pointer;
+}
+#share-succeeded .ok-button:hover{
     box-shadow: 0px 0px 10px gray;
 }

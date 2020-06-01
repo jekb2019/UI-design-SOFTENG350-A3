@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Fidelity Prototype</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="/fontawesome-free-5.13.0-web/js/all.js"></script>
     <script defer src="index.js"></script>
 </head>
 <body>
@@ -208,6 +207,9 @@
                 <label for="send-info__message" id="message-label">Message:</label>
                 <textarea class="user-input" name="send-info__message" id="message" cols="30" rows="8"></textarea>
             </div>
+            <div class="advanced">
+                <span>Advanced</span>
+            </div>
         </div>
         <div class="share-popup__buttons">
             <div class="buttons__share">
@@ -216,6 +218,12 @@
             <div class="buttons__cancel">
                 <span>Cancel</span>
             </div>
+        </div>
+    </section>
+    <section id="share-succeeded">
+        <span>Successfully Shared!</span>
+        <div class="ok-button">
+            <span class="ok">OK</span>
         </div>
     </section>
 </body>
