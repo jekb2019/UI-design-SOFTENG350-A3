@@ -4,56 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Fidelity Prototype</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="/fontawesome-free-5.13.0-web/js/all.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
-            <!-- <i class="fas fa-cube"></i> -->
             <img src="icons/cube-solid.svg" alt="">
             <span>Cloud Based Service</span>
         </div>
         <div class="searchbar">
-            <!-- <i class="fas fa-search"></i> -->
             <img src="icons/search-solid.svg" alt="">
             <span>Search for Files</span>
         </div>
         <div class="user-info">
-            <!-- <i class="fas fa-user-circle"></i> -->
             <img class="user-info__icon" src="icons/user-circle-solid.svg" alt="">
             <div class="user-info__identity">
                 <span>John Smith</span>
                 <span>Student</span>
             </div>
             <img src="icons/cog-solid.svg" alt="">
-            <!-- <i class="fas fa-cog"></i> -->
         </div>
     </header>
+    <!-- Whole Wrapper -->
     <div id="sidebar-page-wrapper">
+        <!-- Sidebar -->
         <section id="sidebar">
             <div class="create-new">
                 <img src="icons/upload-solid.svg" alt="">
-                <!-- <i class="fas fa-upload"></i> -->
-                <span>Create</span>
+                 <span>Create</span>
             </div>
             <hr class="sidebar__section-divider">
             <div class="sidebar__subsection shared-cloud">
                 <div class="subsection__header">
                     <img src="icons/cloud-solid.svg" alt="">
-                    <!-- <i class="fas fa-cloud"></i> -->
                     <span>Shared Cloud</span>
                 </div>
                 <div class="subsection__content">
                     <ul>
                         <li class="active">
                             <img src="icons/folder-solid.svg" alt="">
-                            <!-- <i class="fas fa-folder"></i> -->
                             HCL Group Project
                         </li>
                         <li>
                             <img src="icons/folder-solid.svg" alt="">
-                            <!-- <i class="fas fa-folder"></i> -->
                             Some Project
                         </li>
                     </ul>
@@ -63,19 +58,16 @@
             <div class="sidebar__subsection private-repo">
                 <div class="subsection__header">
                     <img src="icons/lock-solid.svg" alt="">
-                    <!-- <i class="fas fa-lock"></i> -->
                     <span>Private Repository</span>
                 </div>
                 <div class="subsection__content">
                     <ul>
                         <li>
                             <img src="icons/folder-solid.svg" alt="">
-                            <!-- <i class="fas fa-folder"></i> -->
                             My Folder 1
                         </li>
                         <li>
                             <img src="icons/folder-solid.svg" alt="">
-                            <!-- <i class="fas fa-folder"></i> -->
                             My Folder 2
                         </li>
                     </ul>
@@ -85,16 +77,15 @@
             <div class="bin">
                 <div class="subsection__header">
                     <img src="icons/trash-solid.svg" alt="">
-                    <!-- <i class="fas fa-trash-alt"></i> -->
                     <span>Bin</span>
                 </div>
             </div>
         </section>
+        <!-- Content Page -->
         <section id="page">
             <div class="page__header">
                 <span>HCL Group Project</span>
                 <img src="icons/users-solid.svg" alt="">
-                <!-- <i class="fas fa-users"></i> -->
             </div>
             <hr>
             <div class="content">
@@ -154,28 +145,77 @@
             <div class="options">
                 <div class="options__btn">
                     <img src="icons/share-solid.svg" alt="">
-                    <!-- <i class="fas fa-share"></i> -->
                     Share
                 </div>
                 <div class="options__btn">
                     <img src="icons/minus-solid.svg" alt="">
-                    <!-- <i class="fas fa-minus"></i> -->
                     Delete
                 </div>
                 <div class="options__btn">
                     <img src="icons/cogs-solid.svg" alt="">
-                    <!-- <i class="fas fa-cogs"></i> -->
                     Authorise
                 </div>
                 <div class="options__btn">
                     Mark as related
                 </div>
-                <div class="options__btn">
+                <div id="information" class="options__btn">
                     <img src="icons/info-solid.svg" alt="">
-                    <!-- <i class="fas fa-info"></i> -->
                 </div>
             </div>
         </section>
     </div>
+    <section id="share-popup">
+        <div class="share-popup__header">
+            <span class="title">Shared Files:</span>
+            <span class="x">X</span>
+        </div>
+        <div class="share-popup__files">
+            <ul>
+                <li>
+                    <img src="icons/check-solid.svg" alt="">
+                    <span>main.html</span>
+                </li>
+                <li>
+                    <img src="icons/check-solid.svg" alt="">
+                    <span>main.css</span>
+                </li>
+                <li>
+                    <img src="icons/check-solid.svg" alt="">
+                    <span>index.html</span>
+                </li>
+                <li>
+                    <img src="icons/check-solid.svg" alt="">
+                    <span>index.css</span>
+                </li>
+            </ul>
+        </div>
+        <div class="share-popup__send-info">
+            <div>
+                <label for="send-info__to">To:</label>
+                <input class="user-input" type="text" name="send-info__to" id="recipient">
+            </div>
+            <div>
+                <label for="send-info__authority">Authority:</label>
+                <select class="user-input" name="send-info__authority" id="Authority">
+                    <option value="read-only">Read Only</option>
+                    <option value="editable">Editable</option>
+                    <option value="delitable">Delitable</option>
+                    <option value="owner">Owner</option>
+                </select>
+            </div>
+            <div>
+                <label for="send-info__message" id="message-label">Message:</label>
+                <textarea class="user-input" name="send-info__message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="share-popup__buttons">
+            <div class="buttons__share">
+                <span>Share</span>
+            </div>
+            <div class="buttons__Cancel">
+                <span>Cancel</span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
