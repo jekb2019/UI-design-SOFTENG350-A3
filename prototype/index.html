@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Fidelity Prototype</title>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cube"></i>
+            <span>Cloud Based Service</span>
+        </div>
+        <div class="searchbar">
+            <i class="fas fa-search"></i>
+            <span>Search for Files</span>
+        </div>
+        <div class="user-info">
+            <i class="fas fa-user-circle"></i>
+            <div class="user-info__identity">
+                <span>John Smith</span>
+                <span>Student</span>
+            </div>
+            <i class="fas fa-cog"></i>
+        </div>
+    </header>
+    <div id="sidebar-page-wrapper">
+        <section id="sidebar">
+            <div class="create-new">
+                    <i class="fas fa-upload"></i>
+                    <span>Create</span>
+            </div>
+            <hr class="sidebar__section-divider">
+            <div class="sidebar__subsection shared-cloud">
+                <div class="subsection__header">
+                    <i class="fas fa-cloud"></i>
+                    <span>Shared Cloud</span>
+                </div>
+                <div class="subsection__content">
+                    <ul>
+                        <li class="active">
+                            <i class="fas fa-folder"></i>
+                            HCL Group Project
+                        </li>
+                        <li>
+                            <i class="fas fa-folder"></i>
+                            Some Project
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="sidebar__section-divider">
+            <div class="sidebar__subsection private-repo">
+                <div class="subsection__header">
+                    <i class="fas fa-lock"></i>
+                    <span>Private Repository</span>
+                </div>
+                <div class="subsection__content">
+                    <ul>
+                        <li>
+                            <i class="fas fa-folder"></i>
+                            My Folder 1
+                        </li>
+                        <li>
+                            <i class="fas fa-folder"></i>
+                            My Folder 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="sidebar__section-divider">
+            <div class="bin">
+                <div class="subsection__header">
+                    <i class="fas fa-trash-alt"></i>
+                    <span>Bin</span>
+                </div>
+            </div>
+        </section>
+        <section id="page">
+            <div class="page__header">
+                <span>HCL Group Project</span>
+                <i class="fas fa-users"></i>
+            </div>
+            <hr>
+            <div class="content">
+                <div class="content__metadata">
+                    <span class="metadata__name">Name</span>
+                    <span class="metadata__author">Created By</span>
+                    <span class="metadata__date">Last Updated</span>
+                    <span class="metadata__shared">Shared</span>
+                    <span class="metadata__select">Select</span>
+                </div>
+                <hr>
+                <div class="content__files">
+                    <div class="file related">
+                        <span class="file__name">main.html</span>
+                        <span class="file__author">Kenny</span>
+                        <span class="file__date">1/6/2020</span>
+                        <span class="file__shared">Yes</span>
+                        <input type="checkbox" checked class="file__select">
+                    </div>
+                    <div class="file related">
+                        <span class="file__name">main.css</span>
+                        <span class="file__author">Henry</span>
+                        <span class="file__date">1/6/2020</span>
+                        <span class="file__shared">Yes</span>
+                        <input type="checkbox" checked class="file__select">
+                    </div>
+                    <div class="file related">
+                        <span class="file__name">index.html</span>
+                        <span class="file__author">Jason</span>
+                        <span class="file__date">31/5/2020</span>
+                        <span class="file__shared">Yes</span>
+                        <input type="checkbox" checked class="file__select">
+                    </div>
+                    <div class="file related">
+                        <span class="file__name">index.css</span>
+                        <span class="file__author">Donghyun</span>
+                        <span class="file__date">31/5/2020</span>
+                        <span class="file__shared">Yes</span>
+                        <input type="checkbox" checked class="file__select">
+                    </div>
+                    <div class="file">
+                        <span class="file__name">meme.jpg</span>
+                        <span class="file__author">Kenny</span>
+                        <span class="file__date">24/5/2020</span>
+                        <span class="file__shared">Yes</span>
+                        <input type="checkbox" class="file__select">
+                    </div>
+                    <div class="file">
+                        <span class="file__name">my_note.txt</span>
+                        <span class="file__author">Henry</span>
+                        <span class="file__date">20/5/2020</span>
+                        <span class="file__shared">No</span>
+                        <input type="checkbox" class="file__select">
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="options__btn">
+                    <i class="fas fa-share"></i>
+                    Share
+                </div>
+                <div class="options__btn">
+                    <i class="fas fa-minus"></i>
+                    Delete
+                </div>
+                <div class="options__btn">
+                    <i class="fas fa-cogs"></i>
+                    Authorise
+                </div>
+                <div class="options__btn">
+                    Mark as related
+                </div>
+                <div class="options__btn">
+                    <i class="fas fa-info"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
