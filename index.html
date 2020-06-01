@@ -6,6 +6,7 @@
     <title>High Fidelity Prototype</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="/fontawesome-free-5.13.0-web/js/all.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -143,7 +144,7 @@
                 </div>
             </div>
             <div class="options">
-                <div class="options__btn">
+                <div class="options__btn share-btn">
                     <img src="icons/share-solid.svg" alt="">
                     Share
                 </div>
@@ -192,7 +193,7 @@
         <div class="share-popup__send-info">
             <div>
                 <label for="send-info__to">To:</label>
-                <input class="user-input" type="text" name="send-info__to" id="recipient">
+                <input class="user-input" placeholder="Recipient Email" type="text" name="send-info__to" id="recipient">
             </div>
             <div>
                 <label for="send-info__authority">Authority:</label>
@@ -205,14 +206,14 @@
             </div>
             <div>
                 <label for="send-info__message" id="message-label">Message:</label>
-                <textarea class="user-input" name="send-info__message" id="message" cols="30" rows="10"></textarea>
+                <textarea class="user-input" name="send-info__message" id="message" cols="30" rows="8"></textarea>
             </div>
         </div>
         <div class="share-popup__buttons">
             <div class="buttons__share">
                 <span>Share</span>
             </div>
-            <div class="buttons__Cancel">
+            <div class="buttons__cancel">
                 <span>Cancel</span>
             </div>
         </div>
