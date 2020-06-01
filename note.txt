@@ -1,1 +1,3 @@
 Use fontawesome as downloadable so that internet is not needed
+
+Copyright reference in report
