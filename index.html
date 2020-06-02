@@ -199,8 +199,9 @@
                 <select class="user-input" name="send-info__authority" id="Authority">
                     <option value="read-only">Read Only</option>
                     <option value="editable">Editable</option>
-                    <option value="delitable">Delitable</option>
+                    <option value="deletable">Deletable</option>
                     <option value="owner">Owner</option>
+                    <option value="advanced-setting">Advanced Setting</option>
                 </select>
             </div>
             <div>
@@ -224,6 +225,46 @@
         <span>Successfully Shared!</span>
         <div class="ok-button">
             <span class="ok">OK</span>
+        </div>
+    </section>
+    <section id="advanced-share">
+        <span>Advcanced Share</span>
+        <div class="specific-authorities">
+            <span class="specific-authorities__title">Specify Authorities:</span>
+            <div class="checkbox-wrapper">
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Read</span>
+                </div>
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Modify</span> 
+                </div>
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Delete</span>
+                </div>
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Share</span>
+                </div>
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Manage members</span>
+                </div>
+                <div>
+                <input type="checkbox" name="advanced-authority" id="">
+                <span class="selection">Owner</span>
+                </div>
+            </div>
+        </div>
+        <div class="advanced-share__buttons">
+            <div class="advanced-share__buttons__ok">
+                <span>Ok</span>
+            </div>
+            <div class="advanced-share__buttons__cancel">
+                <span>Cancel</span>
+            </div>
         </div>
     </section>
 </body>

@@ -360,3 +360,60 @@ header{
 #share-succeeded .ok-button:hover{
     box-shadow: 0px 0px 10px gray;
 }
+/* Advanced Share Popup */
+#advanced-share{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 240px;
+    width: 400px;
+    margin-top: -120px;
+    margin-left: -200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:var(--padding-default);
+    font-size: var(--font-xlarge);
+}
+#advanced-share > span{
+    border-bottom: 0.5px solid black;
+    width: 100%;
+}
+.specific-authorities{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.specific-authorities .checkbox-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.specific-authorities .checkbox-wrapper > div{
+    height: 30px;
+}
+.specific-authorities__title{
+    font-size: var(--font-small);
+}
+.specific-authorities .selection{
+    font-size: var(--font-micro);
+}
+.advanced-share__buttons{
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-medium);
+}
+.advanced-share__buttons>div{
+    background-color: #eeeeee;
+    border-radius: 40px;
+    padding: 2px 20px;
+    box-shadow: 0px 0px 5px gray;
+    transition: box-shadow var(--animation-default) ease-out;
+    cursor: pointer;
+}
+.advanced-share__buttons>div:hover{
+    box-shadow: 0px 0px 10px gray;
+}
