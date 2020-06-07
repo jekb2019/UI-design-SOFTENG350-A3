@@ -6,6 +6,7 @@ const advancedShare = document.querySelector(".advanced span");
 const advancedSharePopup = document.querySelector("#advanced-share");
 const advancedSharePopupOk = document.querySelector(".advanced-share__buttons__ok");
 const advancedSharePopupCancel = document.querySelector(".advanced-share__buttons__cancel");
+const deleteButton = document.querySelector(".options__btn.delete-btn");
 
 shareButton.addEventListener('click',openSharePopup);
 document.querySelector(".buttons__share").addEventListener('click',()=>{
@@ -18,6 +19,9 @@ document.querySelector(".ok").addEventListener('click',closeSuccessPopup);
 advancedShare.addEventListener('click',openAdvancedSharePopup);
 advancedSharePopupCancel.addEventListener('click', closeAdvancedSharePopup);
 advancedSharePopupOk.addEventListener('click',closeAdvancedSharePopup);
+deleteButton.addEventListener('click',()=>{
+    alert('File(s) sucessfully deleted!');
+});
 
 function closeAdvancedSharePopup(){
     advancedSharePopup.style.display = "none";
